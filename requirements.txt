@@ -1,0 +1,10 @@
+torch
+scikit-learn
+pandas
+numpy
+matplotlib
+seaborn
+interpret
+lime
+shap
+# xailib (course library) comes from https://github.com/pellungrobe/XAI_course_2024

@@ -7,8 +7,8 @@ The project studies *why* a black-box classifier makes a given prediction. We tr
 network to distinguish benign from malignant breast tumours, then apply post-hoc explanation
 methods to individual predictions and compare them with inherently interpretable models.
 
-> **Note:** this repository contains the project **report and presentation only** — the course
-> deliverable was the written analysis, not a code submission.
+> **Note:** this repository contains the project **report, presentation and the analysis
+> notebook** we worked in. The Python code lives in `code/xai_breast_cancer.ipynb`.
 
 ## Setting
 
@@ -41,10 +41,17 @@ faithful global surrogate.
 ## Repository contents
 
 ```
-report/xai_breast_tumor_explainability_report.pdf   # project report
-slides/xai_presentation.pptx                        # presentation
-slides/xai_presentation_speech.docx                 # speaker notes / script
+code/xai_breast_cancer.ipynb    # full analysis: model → instance selection → LIME / LORE / SHAP → interpretable models
+code/black_box_model.ipynb      # the black-box PyTorch classifier on its own
+report/xai_breast_tumor_explainability_report.pdf
+slides/xai_presentation.pptx
+slides/xai_presentation_speech.docx
 ```
+
+`xai_breast_cancer.ipynb` is a Colab notebook. It clones the course library
+([`pellungrobe/XAI_course_2024`](https://github.com/pellungrobe/XAI_course_2024), which provides
+`xailib`) and reads `breast_cancer.csv` from a Google-Drive path. To rerun: place the public
+Breast Cancer Wisconsin CSV at the configured path (or update `PATH_TO_INPUT`) and run the cells.
 
 ## Reference
 
